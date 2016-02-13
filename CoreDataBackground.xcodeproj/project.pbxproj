@@ -15,8 +15,8 @@
 		F5314C531C6FB50800D84BB8 /* PAWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C511C6FB50800D84BB8 /* PAWMainViewController.m */; };
 		F5314C541C6FB50800D84BB8 /* PAWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5314C521C6FB50800D84BB8 /* PAWMainViewController.xib */; };
 		F5314C581C6FB5CC00D84BB8 /* PAWOperationBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C571C6FB5CC00D84BB8 /* PAWOperationBackground.m */; };
-		F5314C651C6FB70300D84BB8 /* PAWTestValues.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C631C6FB70300D84BB8 /* PAWTestValues.m */; };
-		F5314C6E1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C6D1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.m */; };
+		F5314C751C6FC71900D84BB8 /* PAWTestValues.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C721C6FC71900D84BB8 /* PAWTestValues.m */; };
+		F5314C761C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F5314C741C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,10 @@
 		F5314C521C6FB50800D84BB8 /* PAWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAWMainViewController.xib; sourceTree = "<group>"; };
 		F5314C561C6FB5CC00D84BB8 /* PAWOperationBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWOperationBackground.h; sourceTree = "<group>"; };
 		F5314C571C6FB5CC00D84BB8 /* PAWOperationBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWOperationBackground.m; sourceTree = "<group>"; };
-		F5314C621C6FB70300D84BB8 /* PAWTestValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWTestValues.h; sourceTree = "<group>"; };
-		F5314C631C6FB70300D84BB8 /* PAWTestValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWTestValues.m; sourceTree = "<group>"; };
-		F5314C6C1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PAWTestValues+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F5314C6D1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PAWTestValues+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F5314C711C6FC71900D84BB8 /* PAWTestValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAWTestValues.h; path = CoreDataBackground/PAWTestValues.h; sourceTree = "<group>"; };
+		F5314C721C6FC71900D84BB8 /* PAWTestValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAWTestValues.m; path = CoreDataBackground/PAWTestValues.m; sourceTree = "<group>"; };
+		F5314C731C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PAWTestValues+CoreDataProperties.h"; path = "CoreDataBackground/PAWTestValues+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F5314C741C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PAWTestValues+CoreDataProperties.m"; path = "CoreDataBackground/PAWTestValues+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,10 @@
 		F5314C4F1C6FB4E100D84BB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F5314C6C1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.h */,
-				F5314C6D1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.m */,
-				F5314C621C6FB70300D84BB8 /* PAWTestValues.h */,
-				F5314C631C6FB70300D84BB8 /* PAWTestValues.m */,
+				F5314C711C6FC71900D84BB8 /* PAWTestValues.h */,
+				F5314C721C6FC71900D84BB8 /* PAWTestValues.m */,
+				F5314C731C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.h */,
+				F5314C741C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.m */,
 			);
 			name = Model;
 			path = ..;
@@ -194,11 +194,11 @@
 			files = (
 				F5314C3A1C6FB3F500D84BB8 /* AppDelegate.m in Sources */,
 				F5314C581C6FB5CC00D84BB8 /* PAWOperationBackground.m in Sources */,
-				F5314C6E1C6FBC5600D84BB8 /* PAWTestValues+CoreDataProperties.m in Sources */,
+				F5314C761C6FC71900D84BB8 /* PAWTestValues+CoreDataProperties.m in Sources */,
 				F5314C531C6FB50800D84BB8 /* PAWMainViewController.m in Sources */,
 				F5314C371C6FB3F500D84BB8 /* main.m in Sources */,
+				F5314C751C6FC71900D84BB8 /* PAWTestValues.m in Sources */,
 				F5314C3D1C6FB3F500D84BB8 /* CoreDataBackground.xcdatamodeld in Sources */,
-				F5314C651C6FB70300D84BB8 /* PAWTestValues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
