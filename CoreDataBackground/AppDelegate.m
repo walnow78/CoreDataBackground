@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PAWMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    PAWMainViewController *mainVC = [[PAWMainViewController alloc] init];
+    
+    UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    
+    self.window.rootViewController = mainNC;
+    
     return YES;
 }
 
@@ -109,6 +117,11 @@
     }
     _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+    // Add Observer
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:nil];
+
     return _managedObjectContext;
 }
 
@@ -125,6 +138,14 @@
             abort();
         }
     }
+}
+
+#pragma mark Notification context saved
+
+- (void)managedObjectContextDidSave:(NSNotification *)notification {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.managedObjectContext mergeChangesFromContextDidSaveNotification:notification];
+    });
 }
 
 @end
